@@ -1,3 +1,51 @@
-<html>
-<div>Hi</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeping Super Mario</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a1a2e;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        
+        .mario-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .mario-sleeping {
+            width: 100%;
+        }
+        
+        .zzzz {
+            position: absolute;
+            font-size: 24px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            top: -30px;
+            right: 10px;
+            animation: zFade 2s infinite linear;
+        }
+
+        @keyframes zFade {
+            0% { opacity: 1; transform: translateY(0px); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="mario-container">
+        <span class="zzzz">Valio</span>
+        <img class="mario-sleeping" src="giphy.gif" alt="Sleeping Mario GIF">
+    </div>
+</body>
 </html>
